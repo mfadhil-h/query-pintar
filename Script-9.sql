@@ -1,0 +1,1 @@
+update transaction_sms set read_admin_flag = true where transaction_date <= '2022-09-06 22:00:00';

@@ -1,0 +1,13 @@
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Prof. Drh. Deni Noviana, PhD, DAiCVIM', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Dr. Drh. Gunanti, MS', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Arni Diana Fitri, Msi', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Mokhamad Fakhrul Ulum, Msi, PhD', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Arifin Budiman Nugraha, Msi, PhD', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Supriyono, Msi, PhD', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Tri Isyani Tunggadewi, Msi', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Dudung Abdullah', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Danny Umbu', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Agus Wijaya, MSc, PhD', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Erly Rizka Adistya', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Nurul Annisa Tuliman', 0, '', '', '');
+INSERT INTO public.vet_profiles (picture, username, rating, sip, specialization, work_experience) VALUES('', 'Drh. Hamdika Yendri Putra', 0, '', '', '');
