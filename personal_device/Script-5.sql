@@ -10,20 +10,20 @@ ts.client_id = 'C16201122051125'
 --and ts.status_code != '002'
 and ts.transaction_date between '2022-09-06' and '2022-09-07';
 
-select ts.message_id, ts.transaction_date, ts.msisdn, ts.message, ts.country_code, ts.prefix,
-ts.status_code, ts2.description, ts.receiver_type, c.client_name, ts.currency, 
-ts.message_encodng, ts.message_length, ts.sms_count, ts.client_price_per_unit,
-ts.client_price_total, ts.client_sender_id, ts.batch_id, tsf.previous_balance, tsf."usage",
-tsf.after_balance, tsr.client_ip_address, tsr.receiver_data, tsr.receiver_client_response
+select * --ts.message_id, ts.transaction_date, ts.msisdn, ts.message, ts.country_code, ts.prefix,
+--ts.status_code, ts2.description, ts.receiver_type, c.client_name, ts.currency, 
+--ts.message_encodng, ts.message_length, ts.sms_count, ts.client_price_per_unit,
+--ts.client_price_total, ts.client_sender_id, ts.batch_id, tsf.previous_balance, tsf."usage",
+--tsf.after_balance, tsr.client_ip_address, tsr.receiver_data, tsr.receiver_client_response
 from transaction_sms ts
-left join transaction_sms_financial tsf on ts.message_id = tsf.message_id 
-left join transaction_status ts2 on ts.status_code = ts2.status_code 
+--left join transaction_sms_financial tsf on ts.message_id = tsf.message_id 
+--left join transaction_status ts2 on ts.status_code = ts2.status_code 
 left join client c on ts.client_id = c.client_id 
-left join transaction_sms_receiver tsr on ts.message_id = tsr.message_id 
+--left join transaction_sms_receiver tsr on ts.message_id = tsr.message_id 
 where 
-ts.client_id = 'VTP191218031201'
---lower(c.client_name) like '%vfirst%'
-and ts.transaction_date between '2022-10-01' and '2022-11-01'
+--ts.client_id = 'VTP191218031201'
+lower(c.client_name) like '%vfirst%'
+and ts.transaction_date between '2022-11-01' and '2022-11-30'
 order by ts.transaction_date desc;
 
 select distinct (vs.*)

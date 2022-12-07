@@ -21,6 +21,27 @@ pi2.pasti_product_code = 'HPTSELHALO'
 --and username = 'LOKETPINTAR'
 and is_paid = true
 
+-- public.report_request_transaction_orchestra definition
+
+-- Drop table
+
+-- DROP TABLE public.report_request_transaction_orchestra;
+
+CREATE TABLE public.report_request_transaction_orchestra (
+	request_id varchar(100) NOT NULL,
+	request_datetime timestamp NOT NULL,
+	username varchar(50) NOT NULL,
+	start_datetime timestamp NOT NULL,
+	end_datetime timestamp NOT NULL,
+	client_id varchar(50) NOT NULL,
+	search_keyword varchar(500) NULL,
+	search_parameter varchar(100) NULL,
+	is_generated bool NOT NULL,
+	file_path varchar(500) NULL,
+	CONSTRAINT report_request_transaction_orchestra_pkey PRIMARY KEY (request_id)
+);
+
+
 -- public.report_transaction_danamon definition
 
 -- Drop table

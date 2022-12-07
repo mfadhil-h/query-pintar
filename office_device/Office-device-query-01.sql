@@ -36,3 +36,9 @@ CREATE TABLE public.etalaze_user_use_product (
 	CONSTRAINT etalaze_user_use_product_pk PRIMARY KEY (user_id, product_id)
 );
 
+sELECT * FROM "user_api"
+where username = 'Gr3nPkG1';
+
+sELECT tsd.* FROM transaction_sms_dlr tsd
+left join transaction_sms ts on ts.message_id = tsd.message_id 
+where tsd.dlr_status = '000' and ts.receiver_type = 'SMPP' order by dlr_date_time desc limit 10;
