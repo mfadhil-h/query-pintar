@@ -155,7 +155,7 @@ left join client as clt on trx.client_id = clt.client_id left join transaction_s
 trx.status_code = sts.status_code left join transaction_sms_status as tss on tss.message_id = trx.message_id 
 left join transaction_status as stx on tss.final_status = stx.status_code 
 left join transaction_sms_financial as trf on trx.message_id = trf.message_id 
-where trx.transaction_date >= '2022-00-09 00:00:00' and trx.transaction_date <= '2022-07-09 23:59:59' 
+where trx.transaction_date >= '2023-01-01 00:00:00' and trx.transaction_date < '2022-02-02 00:00:00' 
 and (clt.upline_client_id = 'VTP191218031201' or trx.client_id = 'VTP191218031201')
 --and clt.client_id = 'HCT21081010842' 
 

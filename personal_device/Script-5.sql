@@ -21,9 +21,9 @@ from transaction_sms ts
 left join client c on ts.client_id = c.client_id 
 --left join transaction_sms_receiver tsr on ts.message_id = tsr.message_id 
 where 
---ts.client_id = 'VTP191218031201'
-lower(c.client_name) like '%vfirst%'
-and ts.transaction_date between '2022-11-01' and '2022-11-30'
+ts.client_id = 'VTP191218031201'
+--lower(c.client_name) like '%vfirst%'
+and ts.transaction_date between '2022-12-01' and '2022-12-31'
 order by ts.transaction_date desc;
 
 select distinct (vs.*)

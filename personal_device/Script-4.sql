@@ -99,3 +99,6 @@ select client_name, bm.*
 from client c 
 left join bpjs_mitra bm ON bm.client_id = c.client_id 
 where upper(c.client_name) similar to '%(ARTHASERA|BIMASAKTI|ASTRAPAY|AYOPOP|NOBU|DANAMON|INDOTAMA|JALAMETA|LOKET|MCASH|RAYCARE|SEPULSA|TRADEZIA)%';
+
+select * from report_request_transaction_sms rrts 
+where rrts.request_datetime in ('2023-01-05 11:02:13','2023-01-05 11:02:49')
